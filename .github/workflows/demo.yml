@@ -10,8 +10,8 @@ jobs:
     name: Test code
     runs-on: ubuntu-latest
     steps:
-      - name: Print message
-        run: echo "Hello tests"
+      - name: Get code from repo
+        uses: actions/checkout@v3
       - name: List files
         run: ls -la
   deploy:
