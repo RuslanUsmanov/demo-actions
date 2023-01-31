@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Print message
         run: echo "Hello tests"
+      - name: List files
+        run: ls -la
   deploy:
     name: Deploy to server
     runs-on: ubuntu-latest
