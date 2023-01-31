@@ -1,0 +1,14 @@
+# Comment
+name: Demo for python
+
+on:
+  push:
+     branches: [main]
+
+jobs:
+  my-test:
+    name: Test code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Hello tests"
