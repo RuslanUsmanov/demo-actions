@@ -43,6 +43,9 @@ jobs:
 
       - name: Rsync files to server
         run: rsync -rav --delete * yandex_server:~/
+
+      - name: Run command
+        run: ssh yandex_server 'python3 main.py'
     # steps:
     #   - name: Get code from repo
     #     uses: actions/checkout@v3
